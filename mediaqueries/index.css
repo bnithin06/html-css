@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#container{
+    width: 100vw;
+    height:3em;
+    border-bottom: 2px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#logo{
+    width: 20vw;
+    display: flex;
+    margin-left: 3%;
+    justify-content: start;
+}
+#nav_links,#bar{
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#bar{
+    display: flex;
+    justify-content:end;
+    margin-right: 1em;
+    font-size: 1.5em;
+}
+#hero{
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    font-size: 2em;
+    place-content: center;
+}
+
+@media (min-width: 450px) {
+    #bar{
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    #nav_links{
+        display: none;
+    }
+    
+}
